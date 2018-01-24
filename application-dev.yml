@@ -1,13 +1,13 @@
 #加密配置
 jasypt:
   encryptor:
-    password: lengleng
+    password: kira.liao
 
 spring:
   redis:
     remote: true        #是否是cachecloud 获取
-    host: 106.14.69.75
-    port: 6381
+    host: 127.0.0.1
+    port: 6379
     password:
   http:
     multipart:
