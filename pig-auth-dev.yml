@@ -6,9 +6,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-#    password: ENC(gc16brBHPNq27HsjaULgKGq00Rz6ZUji)
-    password: admin
-    url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    password: ENC(gc16brBHPNq27HsjaULgKGq00Rz6ZUji)
+    url: jdbc:mysql://106.14.69.75:3309/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
       
 pig:
   auth:
@@ -23,7 +22,6 @@ pig:
 
 urls:
   anon:
-    - /health
     - /social
     - /signin
     - /signup
