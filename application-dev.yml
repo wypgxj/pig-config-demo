@@ -2,6 +2,11 @@
 jasypt:
   encryptor:
     password: lengleng
+server:
+  tomcat:
+    max-threads: 500 # Maximum amount of worker threads.
+    min-spare-threads: 50 # Minimum amount of worker threads
+
 
 spring:
   redis:
@@ -34,6 +39,23 @@ feign:
     enable: true
   httpclient:
     enable: false
+  client:
+    config:
+      feignName:
+        connectTimeout: 30000
+        readTimeout: 30000  
+hystrix:
+  threadpool:
+    default:
+      coreSize: 500
+      maxQueueSize: 1000
+      queueSizeRejectionThreshold: 800
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
     
 #监控短点配置
 management:
